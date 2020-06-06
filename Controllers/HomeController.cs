@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Estoque.Models;
+using FerragensOnline.Models;
 
-namespace Estoque.Controllers
+namespace FerragensOnline.Controllers
 {
     public class HomeController : Controller
     {

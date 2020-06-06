@@ -1,10 +1,10 @@
-﻿@model EstoqueOnline.Models.Estoque
+﻿@model FerragensOnline.Models.Estoque
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Visualização das informações do cadastro";
 }
 
-<h1>Details</h1>
+    <h1>Visualização das informações do cadastro</h1>
 
 <div>
     <h4>Estoque</h4>
@@ -49,6 +49,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.id"><img src="~/img/editar.png" />Editar</a> |
+    <a asp-action="Index"><img src="~/img/lista.png" />Lista de Cadastro</a>
 </div>

@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using EstoqueOnline.Models;
+using FerragensOnline.Models;
 
-namespace EstoqueOnline.Controllers
+namespace FerragensOnline.Controllers
 {
     public class EstoquesController : Controller
     {
@@ -53,7 +53,7 @@ namespace EstoqueOnline.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,Nome,Classe,Preco_Custo,Preco_Final,Codigo_Barras,Fornecedor")] Estoques estoque)
+        public async Task<IActionResult> Create([Bind("id,Nome,Classe,Preco_Custo,Preco_Final,Codigo_Barras,Fornecedor")] Estoque estoque)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace EstoqueOnline.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,Nome,Classe,Preco_Custo,Preco_Final,Codigo_Barras,Fornecedor")] Estoques estoque)
+        public async Task<IActionResult> Edit(int id, [Bind("id,Nome,Classe,Preco_Custo,Preco_Final,Codigo_Barras,Fornecedor")] Estoque estoque)
         {
             if (id != estoque.id)
             {

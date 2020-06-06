@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EstoqueOnline.Models;
+using FerragensOnline.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,9 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 
-namespace EstoqueOnline
+namespace FerragensOnline
 {
     public class Startup
     {
@@ -27,13 +26,13 @@ namespace EstoqueOnline
         public void ConfigureServices(IServiceCollection services)
         {
 
-            var connection = Configuration["ConxaoMysql:MySqlConnectionString"];
+            var connection = Configuration["ConexaoMySql:MySqlConnectionString"];
 
             services.AddDbContext<Context>(options => options.UseMySql(connection));
 
             services.AddMvc();
 
-        services.AddControllersWithViews();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

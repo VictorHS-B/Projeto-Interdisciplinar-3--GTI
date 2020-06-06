@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EstoqueOnline.Models
+namespace FerragensOnline.Models
 {
     public class InicializaBD
     {
@@ -11,7 +11,7 @@ namespace EstoqueOnline.Models
         {
             context.Database.EnsureCreated();
 
-            if(context.Estoques.Any())
+            if (context.Estoques.Any())
             {
                 return;
             }

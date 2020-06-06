@@ -1,6 +1,6 @@
 using System;
 
-namespace Estoque.Models
+namespace FerragensOnline.Models
 {
     public class ErrorViewModel
     {
