@@ -59,7 +59,7 @@ namespace FerragensOnline
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Estoques}/{action=Index}/{id?}");
+                    pattern: "{controller=Publico}/{action=Logar}/{id?}");
             });
         }
     }

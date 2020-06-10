@@ -19,11 +19,48 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Caixa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Estoque</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Fianceiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Vendedores" asp-action="Index">Vendedor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Cliente</a>
+                        </li>
+                        @{
+                            Context.Request.Cookies.TryGetValue("Email", out string value);
+                            if (value != null)
+                            {
+                                if (value.ToString() != "")
+                                { 
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Publico" asp-action="Logout">Sair</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <script type="text/javascript">
+                                        window.location.href="@Url.Action("AcessoNegado", "Publico")
+                                    </script>
+                                }
+                            }
+                            else
+                            {
+                                <script type="text/javascript">
+                                        window.location.href="@Url.Action("AcessoNegado", "Publico")
+                                </script>
+                            }
+
+                        }
+
+
+
                     </ul>
                 </div>
             </div>

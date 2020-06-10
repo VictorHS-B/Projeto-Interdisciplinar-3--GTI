@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\FerragensOnline\\FerragensOnline.csproj": {}
+    "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\FerragensOnline\\FerragensOnline.csproj": {
+    "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\FerragensOnline\\FerragensOnline.csproj",
+        "projectUniqueName": "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj",
         "projectName": "FerragensOnline",
-        "projectPath": "C:\\Users\\User\\source\\repos\\FerragensOnline\\FerragensOnline.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\FerragensOnline\\obj\\",
+        "projectPath": "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj",
+        "packagesPath": "C:\\Users\\eders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eders\\Documents\\Estoque\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eders\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,12 +78,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
