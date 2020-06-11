@@ -6,12 +6,17 @@
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+<<<<<<< HEAD
     <script src="~/js/JavaScript.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery/dist/jquery-3.3.1.min.js"></script>
 </head>
 <body style="background-color:darkcyan">
+=======
+</head>
+<body>
+>>>>>>> 51b9243ccdc90222ecce8988584e3f38ae439bc6
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -23,17 +28,73 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
+<<<<<<< HEAD
+<<<<<<<< HEAD:Projeto-Interdisciplinar-3--GTI-master/Views/Shared/_LayoutUser.cshtml
                             <a class="nav-link text-dark" asp-area="" asp-controller="Publico" asp-action="Logar">Acessar</a>
+========
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Caixa</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Estoque</a>
+>>>>>>>> 51b9243ccdc90222ecce8988584e3f38ae439bc6:Views/Shared/_Layout.cshtml
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Fianceiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Vendedores" asp-action="Index">Vendedor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Cliente</a>
+                        </li>
+                        @{
+                            Context.Request.Cookies.TryGetValue("Email", out string value);
+                            if (value != null)
+                            {
+                                if (value.ToString() != "")
+                                { 
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Publico" asp-action="Logout">Sair</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <script type="text/javascript">
+                                        window.location.href="@Url.Action("AcessoNegado", "Publico")
+                                    </script>
+                                }
+                            }
+                            else
+                            {
+                                <script type="text/javascript">
+                                        window.location.href="@Url.Action("AcessoNegado", "Publico")
+                                </script>
+                            }
+
+                        }
+
+
+
+=======
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Publico" asp-action="Logar">Logar</a>
+                        </li>
+>>>>>>> 51b9243ccdc90222ecce8988584e3f38ae439bc6
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+<<<<<<< HEAD
     <div style="background-color:darkcyan">
         @RenderBody()
     </div>
     <footer class="border-top footer text-muted" style="background-color:lightgray">
+=======
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="border-top footer text-muted">
+>>>>>>> 51b9243ccdc90222ecce8988584e3f38ae439bc6
     <div class="container">
         &copy; 2020 - FerragensOnline - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
     </div>

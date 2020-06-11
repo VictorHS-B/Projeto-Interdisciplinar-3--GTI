@@ -1,9 +1,12 @@
-﻿using FerragensOnline.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using FerragensOnline.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FerragensOnline.Controllers
 {
@@ -60,13 +63,13 @@ namespace FerragensOnline.Controllers
             }
         }
 
-        public string AutenticarUser(string email, string senha)
+        public string AutenticarUser (string email, string senha)
         {
             var query = (from u in _context.Vendedores
                          where u.Email == email &&
                          u.Senha == senha
                          select u).SingleOrDefault();
-            if (query == null)
+            if(query == null)
             {
                 return "";
             }

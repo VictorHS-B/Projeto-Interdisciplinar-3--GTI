@@ -3,55 +3,40 @@
 @{
     ViewData["Title"] = "Details";
 }
-    <div class="container border col-6 rounded" style="background-color:ghostwhite">
-        <br />
-        <h2 class="text-center">Details</h2>
-        <br />
-        <div class="container border rounded" style="background-color:whitesmoke">
-            <br />
-            <h4>Vendedor</h4>
-            <hr />
-            <dl class="row">
-                <dt class="col-sm">
-                    @Html.DisplayNameFor(model => model.Nome)
-                </dt>
-                <dd class="col-sm">
-                    @Html.DisplayFor(model => model.Nome)
-                </dd>
-                <dt class="col-sm">
-                    @Html.DisplayNameFor(model => model.Usuario)
-                </dt>
-                <dd class="col-sm">
-                    @Html.DisplayFor(model => model.Usuario)
-                </dd>
-                <dt class="col-sm">
-                    @Html.DisplayNameFor(model => model.Email)
-                </dt>
-                <dd class="col-sm">
-                    @Html.DisplayFor(model => model.Email)
-                </dd>
-                <dt class="col-sm">
-                    @Html.DisplayNameFor(model => model.Senha)
-                </dt>
-                <dd class="col-sm">
-                    @Html.DisplayFor(model => model.Senha)
-                </dd>
-            </dl>
-        </div>
-        <br />
-        <div class="text-center">
-            <div class="btn btn-info">
-                <a asp-action="Edit" asp-route-id="@Model.id" style="color:white">Editar <img src="~/img/editar.png" /></a>
-            </div>
-        </div>
-        <br />
-        <br />
-        <br />
-        <div>
-            <a asp-action="Index"> <h6 class="font-weight-bold" style="color:darkcyan"><img src="~/img/lista.png" /> Back to List </h6></a>
-        </div>
-        <br />
-    </div>
-<br />
-<br />
-<br />
+
+<h1>Details</h1>
+
+<div>
+    <h4>Vendedor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Usuario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

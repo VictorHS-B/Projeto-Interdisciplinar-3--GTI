@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD:Projeto-Interdisciplinar-3--GTI-master/obj/FerragensOnline.csproj.nuget.dgspec.json
     "C:\\Users\\eders\\Documents\\Estoque\\Projeto-Interdisciplinar-3--GTI-master\\FerragensOnline.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\eders\\Documents\\Estoque\\Projeto-Interdisciplinar-3--GTI-master\\FerragensOnline.csproj",
         "packagesPath": "C:\\Users\\eders\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\eders\\Documents\\Estoque\\Projeto-Interdisciplinar-3--GTI-master\\obj\\",
+=======
+    "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj",
+        "projectName": "FerragensOnline",
+        "projectPath": "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj",
+        "packagesPath": "C:\\Users\\eders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eders\\Documents\\Estoque\\obj\\",
+>>>>>>> 51b9243ccdc90222ecce8988584e3f38ae439bc6:obj/FerragensOnline.csproj.nuget.dgspec.json
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

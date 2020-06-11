@@ -8773,11 +8773,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD:Projeto-Interdisciplinar-3--GTI-master/obj/project.assets.json
       "projectUniqueName": "C:\\Users\\eders\\Documents\\Estoque\\Projeto-Interdisciplinar-3--GTI-master\\FerragensOnline.csproj",
       "projectName": "FerragensOnline",
       "projectPath": "C:\\Users\\eders\\Documents\\Estoque\\Projeto-Interdisciplinar-3--GTI-master\\FerragensOnline.csproj",
       "packagesPath": "C:\\Users\\eders\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\eders\\Documents\\Estoque\\Projeto-Interdisciplinar-3--GTI-master\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj",
+      "projectName": "FerragensOnline",
+      "projectPath": "C:\\Users\\eders\\Documents\\Estoque\\FerragensOnline.csproj",
+      "packagesPath": "C:\\Users\\eders\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eders\\Documents\\Estoque\\obj\\",
+>>>>>>> 51b9243ccdc90222ecce8988584e3f38ae439bc6:obj/project.assets.json
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
