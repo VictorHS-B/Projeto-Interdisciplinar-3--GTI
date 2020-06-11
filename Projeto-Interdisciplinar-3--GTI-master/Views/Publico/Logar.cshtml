@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        <br />
+        <br />
+
+    </div>
+    <div class="container border col-4 rounded" style="background-color:ghostwhite">
+        <div class="row text-center">
+            <div class="col">
+                <h1>Acessar</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr />
+            </div>
+        </div>
+        <h3 class="text-center"></h3>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <form action="Logar.cshtml" method="post" onsubmit="return validaemail()">
+        <div class="form-group">
+            <label class="col">Email</label>
+            <span id="emailmsg"></span>
+            <div class="col">
+                <input type="text" name="email" id="email" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col">Senha</label>
+            <span id="senhamsg"></span>
+            <div class="col">
+                <input type="password" name="senha" id="senha" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr />
+            </div>
+        </div>
+        <div class="container"><br /></div>
+        <div class=" row form-group">
+            <div class="col text-center">
+                <input type="submit" value="Entrar" class="btn btn-info" />
+            </div>
+        </div>
+        <div class="container"><br /></div>
+    </form>
+    </div>
+    
+
+}

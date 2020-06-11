@@ -1,0 +1,70 @@
+﻿@model FerragensOnline.Models.Estoque
+
+@{
+    ViewData["Title"] = "Visualização das informações do cadastro";
+}
+    <div class="container border col-11 rounded" style="background-color:ghostwhite">
+        <br />
+        <h2 class="text-center">Informações do Cadastro</h2>
+        <br />
+        <div class="container border rounded" style="background-color:whitesmoke">
+            <br />
+            <h4>Estoque</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Classe)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Classe)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Preco_Custo)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Preco_Custo)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Preco_Final)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Preco_Final)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Codigo_Barras)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Codigo_Barras)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Fornecedor)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Fornecedor)
+                </dd>
+            </dl>
+        </div>
+        <br />
+       
+        <div class="text-center">
+<div class="btn btn-info">
+    <a asp-action="Edit" asp-route-id="@Model.id" style="color:white">Editar <img src="~/img/editar.png" /></a>
+</div>
+        </div>
+     <br />
+        <br />
+        <br />
+        <div>
+            <a asp-action="Index"><h6 class="font-weight-bold" style="color:darkcyan"><img src="~/img/lista.png" /> Lista de Cadastro</h6></a>
+        </div>
+        <br />
+    </div>
+<br />
+<br />
+<br />

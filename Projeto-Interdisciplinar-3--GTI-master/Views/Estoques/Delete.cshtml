@@ -1,0 +1,76 @@
+﻿@model FerragensOnline.Models.Estoque
+
+@{
+    ViewData["Title"] = "Exclusão de Cadastro";
+}
+    <div class="container border col-11 rounded" style="background-color:ghostwhite">
+        <br />
+        <h2 class="text-center">Exclusão de Cadastro</h2>
+  <br />
+        <div class="col text-center"><h4 class="btn btn-warning">Tem certeza que deseja excluir este item?</h4></div>
+       
+        <div class="container border rounded" style="background-color:whitesmoke">
+            <br />
+            <h4>Estoque</h4>
+         <hr />
+            <dl class="row">
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Classe)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Classe)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Preco_Custo)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Preco_Custo)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Preco_Final)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Preco_Final)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Codigo_Barras)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Codigo_Barras)
+                </dd>
+                <dt class="col-sm">
+                    @Html.DisplayNameFor(model => model.Fornecedor)
+                </dt>
+                <dd class="col-sm">
+                    @Html.DisplayFor(model => model.Fornecedor)
+                </dd>
+               
+            </dl>
+        </div>
+            <br />
+            <br />
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="id" />
+                <div class="text-center">
+                <input type="submit" value="Excluir" class="btn btn-danger" /> 
+                </div>
+            </form>
+            <br />
+            <br />
+            <br />
+            <div>
+                <a asp-action="Index"><h6 class="font-weight-bold" style="color:darkcyan"><img src="~/img/lista.png" /> Lista de Cadastro</h6></a>
+            </div>
+            <br />
+          
+
+     </div>
+<br />    
+<br />
+<br />

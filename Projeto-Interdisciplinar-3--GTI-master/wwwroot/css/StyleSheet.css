@@ -1,0 +1,9 @@
+﻿*{
+    box-sizing:border-box;
+}
+
+.formulario{
+    background-color: #CCCCCC;
+    width:400px;
+    margin: auto;
+}
